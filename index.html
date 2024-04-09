@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center p-3 bg-info bg-opacity-50" id="header"> WEATHER DASHBOARD </h1>
+    </header>
+
+<!-- left column upper -->
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col-4 oder-1">
+                <form class="bg-warning px-4 pb-3 rounded">
+                    <h1 class="fs-3 pt-3 text-decoration-underline">Search City:</h1>
+                        <input type="text" id="city" class="form-control"  placeholder="Enter City">
+                        <button type="submit" id="submit" class="btn btn-success mt-3">SEARCH</button>
+                </form>
+<!-- left column lower -->
+                <div class="container row">
+                    <h3 id="search-history" class="col-11 bg-light d-flex justify-content-center border border-primary rounded fs-5" > hello mate </h3>
+                    <button type="button" class="col align-self-center d-flex btn-close" aria-label="Close"></button>    
+                </div>
+            </div>
+
+<!-- right comlumn -->
+            <div class="container order-2 col-8">
+                <div id="current-weather" class="p-3 bg-info bg-opacity-10 border border-info rounded h-75" >
+                current weather
+                </div>
+                <div id="5-day" class="p-3 align-self-end">
+                5-day forecast
+                </div>
+             </div>
+
+    <script> scr="./assets/JS/script.js"</script>
+</body>
+</html>
