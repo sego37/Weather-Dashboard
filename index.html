@@ -19,28 +19,42 @@
     <div class="container text-center mt-5">
         <div class="row">
             <div class="col-4 oder-1">
-                <form class="bg-warning px-4 pb-3 rounded">
+                <form id="cityForm" class="bg-warning px-4 pb-3 rounded">
                     <h1 class="fs-3 pt-3 text-decoration-underline">Search City:</h1>
                         <input type="text" id="city" class="form-control"  placeholder="Enter City">
                         <button type="submit" id="submit" class="btn btn-success mt-3">SEARCH</button>
                 </form>
+
 <!-- left column lower -->
                 <div class="container row">
-                    <h3 id="search-history" class="col-11 bg-light d-flex justify-content-center border border-primary rounded fs-5" > hello mate </h3>
+                    <h3 id=${city} class="col-11 bg-light d-flex justify-content-center border border-primary rounded fs-5 search-history" > hello mate </h3>
                     <button type="button" class="col align-self-center d-flex btn-close" aria-label="Close"></button>    
                 </div>
             </div>
 
 <!-- right comlumn -->
             <div class="container order-2 col-8">
-                <div id="current-weather" class="p-3 bg-info bg-opacity-10 border border-info rounded h-75" >
-                current weather
+                <div id="current-weather" class="bg-info bg-opacity-10 border border-info rounded h-75" >
+                    
+                    <h2 id="city-name"></h2>
+                    <p id="current-temp"></p>
+                    <p id="current-humidity"></p>
+                    <p id="current-wind"></p>
+
                 </div>
-                <div id="5-day" class="p-3 align-self-end">
-                5-day forecast
+                <div id="5-day" class="p-3 align-self-end d-flex">
+                            
+
+
+                    
+        
+
                 </div>
              </div>
-
-    <script> scr="./assets/JS/script.js"</script>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/JS/script.js"></script>
+    <!-- <script src="./assets/JS/demo.js"></script> -->
 </body>
 </html>
