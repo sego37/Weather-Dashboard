@@ -86,11 +86,6 @@ function renderFiveDays(selectedData) {
     $("#5-day").append(cardDiv)
   }
 
-  
-
-
-
-
 }
 
 
